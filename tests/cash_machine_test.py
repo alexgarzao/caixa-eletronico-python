@@ -46,6 +46,11 @@ def check_withdrawal_2540_test():
     __assert_result(cm.cash_notes_for_withdrawal(2540), {100: 25, 50: 0, 20: 2, 10: 0})
 
 
+def check_withdrawal_with_impossible_value_test():
+    cm = CashMachine()
+    __assert_result(cm.cash_notes_for_withdrawal(33), {100: 0, 50: 0, 20: 0, 10: 0})
+
+
 def __assert_result(result, expected):
     assert result == expected, \
         "Resultado={} Esperado={}".format(result, expected)
