@@ -10,13 +10,16 @@ class CashMachineDisplay:
         return self.__format_message(cash_notes)
 
     def __format_message(self, cash_notes):
+        if not cash_notes:
+            return ""
+
         message = ""
 
-        for cash_note, count in cash_notes.items():
-            if count == 0:
+        for note in cash_notes:
+            if note.used() == 0:
                 continue
 
-            message += "{} nota(s) de R$ {},00, ".format(count, cash_note)
+            message += "{} nota(s) de R$ {},00, ".format(note.used(), note.value())
 
         if message:
             message = "Entregar " + message[:-2]
