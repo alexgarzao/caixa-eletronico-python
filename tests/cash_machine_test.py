@@ -1,7 +1,6 @@
 from nose.tools import eq_
 
 from cash_machine.cash_machine import CashMachine, CashNotes
-from cash_machine.cash_note import CashNote
 
 
 def withdrawal_100_test():

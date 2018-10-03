@@ -3,7 +3,12 @@ from .cash_note import CashNote
 
 class CashNotes:
     def __init__(self, note_100_used=0, note_50_used=0, note_20_used=0, note_10_used=0):
-        self.__available_cash_notes = [CashNote(100, note_100_used), CashNote(50, note_50_used), CashNote(20, note_20_used), CashNote(10, note_10_used)]
+        self.__available_cash_notes = [
+            CashNote(100, note_100_used),
+            CashNote(50, note_50_used),
+            CashNote(20, note_20_used),
+            CashNote(10, note_10_used)
+        ]
         self.__cash_note_idx = 0
 
     def get_next_note(self):
