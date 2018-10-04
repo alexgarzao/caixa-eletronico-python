@@ -15,11 +15,14 @@ def used_test():
     cn = CashNote(25)
     eq_(cn.used(), 0)
 
-    cn.inc_used()
+    cn.discount(25)
     eq_(cn.used(), 1)
 
-    cn.inc_used()
+    cn.discount(30)
     eq_(cn.used(), 2)
+
+    cn.discount(60)
+    eq_(cn.used(), 4)
 
 
 def are_equal_test():

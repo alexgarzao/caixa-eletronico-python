@@ -10,10 +10,7 @@ class CashMachine:
             if cash_note.value() == 0:
                 return None
 
-            while value >= cash_note.value():
-                cash_note.inc_used()
-                value -= cash_note.value()
-
+            value -= cash_note.discount(value)
             if value == 0:
                 return cash_notes
 
