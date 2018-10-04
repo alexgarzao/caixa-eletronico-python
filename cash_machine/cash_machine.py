@@ -2,6 +2,7 @@ from cash_machine.cash_notes import CashNotes
 
 
 class CashMachine:
+    "Classe responsável por calcular as notas necessárias para realizar um saque."
     def cash_notes_for_withdrawal(self, value):
         cash_notes = CashNotes()
 

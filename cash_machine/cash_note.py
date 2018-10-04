@@ -1,4 +1,5 @@
 class CashNote:
+    "Classe responsável por modelar uma nota específica."
     def __init__(self, value, used=0):
         self.__value = value
         self.__used = used

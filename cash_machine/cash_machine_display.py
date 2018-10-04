@@ -2,6 +2,7 @@ from .cash_machine import CashMachine
 
 
 class CashMachineDisplay:
+    "Classe responsável por gerar o texto indicando as notas necessárias para realizar o saque."
     def __init__(self):
         self.cm = CashMachine()
 

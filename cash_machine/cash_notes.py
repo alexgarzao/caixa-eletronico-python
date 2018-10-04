@@ -2,6 +2,7 @@ from .cash_note import CashNote
 
 
 class CashNotes:
+    """ Classe responsável por registrar as notas existentes no caixa eletrônico."""
     def __init__(self, note_100_used=0, note_50_used=0, note_20_used=0, note_10_used=0):
         self.__available_cash_notes = [
             CashNote(100, note_100_used),
