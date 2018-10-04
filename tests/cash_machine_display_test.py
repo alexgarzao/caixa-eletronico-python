@@ -55,7 +55,7 @@ def check_withdrawal_0_test():
     cmd = CashMachineDisplay()
     eq_(
         cmd.message_for_withdrawal(0),
-        ""
+        "Impossível de sacar este valor!"
     )
 
 
@@ -63,7 +63,7 @@ def check_withdrawal_negative_number_test():
     cmd = CashMachineDisplay()
     eq_(
         cmd.message_for_withdrawal(-50),
-        ""
+        "Impossível de sacar este valor!"
     )
 
 
@@ -79,5 +79,5 @@ def check_withdrawal_with_impossible_value_test():
     cmd = CashMachineDisplay()
     eq_(
         cmd.message_for_withdrawal(2537),
-        ""
+        "Impossível de sacar este valor!"
     )

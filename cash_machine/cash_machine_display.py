@@ -11,7 +11,7 @@ class CashMachineDisplay:
 
     def __format_message(self, cash_notes):
         if not cash_notes:
-            return ""
+            return "Impossível de sacar este valor!"
 
         message = ""
 
@@ -21,7 +21,6 @@ class CashMachineDisplay:
 
             message += "{} nota(s) de R$ {},00, ".format(note.used(), note.value())
 
-        if message:
-            message = "Entregar " + message[:-2]
+        message = "Entregar " + message[:-2]
 
         return message
