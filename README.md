@@ -25,4 +25,4 @@ Para executar a aplicação, execute o seguinte comando:
 
     python main.py 1250
 
-No exempo acima, 1250 seria o valor a ser sacado.
+No exemplo acima, 1250 seria o valor a ser sacado.
